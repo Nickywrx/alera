@@ -5861,6 +5861,9 @@ var LAreaData = [{
 	"id": "34",
 	"name": "\u53f0\u6e7e\u7701",
 	"child": [{
+		"id": "340",
+		"name":"\u53f0\u6e7e\u5730\u533a",
+		"child": [{
 		"id": "394",
 		"name": "\u53f0\u5317\u5e02"
 	}, {
@@ -5969,6 +5972,7 @@ var LAreaData = [{
 	}, {
 		"id": "416",
 		"name": "\u82b1\u83b2\u53bf"
+	}]
 	}]
 }, {
 	"id": "19",

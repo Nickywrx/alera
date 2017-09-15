@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="LArea.css">
-	<script src="LArea.js"></script>
-	<script src="LAreaData1.js"></script>
+	
 </head>
 <body>
-	<p><span>省&nbsp;&nbsp;&nbsp;市&nbsp;&nbsp;&nbsp;区：</span> <input class="inp_1" name="province" id="province" placeholder="请选择省市区" value="" readonly/></p>
+	<p><span>省&nbsp;&nbsp;&nbsp;市&nbsp;&nbsp;&nbsp;区2：</span> <input class="inp_1" name="province" id="province" placeholder="请选择省市区" value="" readonly/></p>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="LArea.js"></script>
+	<script src="LAreaData1.js"></script>
+	
 	<script>
 		var area1 = new LArea();
 		area1.init({
@@ -22,7 +25,9 @@
 		'type': 1, //数据源类型
 		'data': LAreaData //数据源
 	});
+	$('#province')[0].activeElement.blur();
 	//area1.value=[1,13,3];//控制初始位置，注意：该方法并不会影
 	</script>
+	
 </body>
 </html>

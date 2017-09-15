@@ -1,18 +1,4 @@
-/**
- * LArea移动端城市选择控件
- * 
- * version:1.7.2
- * 
- * author:黄磊
- * 
- * git:https://github.com/xfhxbb/LArea
- * 
- * Copyright 2016
- * 
- * Licensed under MIT
- * 
- * 最近修改于： 2016-6-12 16:47:41
- */
+
 window.LArea = (function() {
     var MobileArea = function() {
         this.gearArea;
@@ -274,7 +260,7 @@ window.LArea = (function() {
             var _self = this;
             var item = data || [];
             var l = item.length;
-            var gearChild = _self.gearArea.querySelectorAll(".gear");
+            var gearChild = _self.gearArea.querySelectorAll(".gear") || 0;
             var gearVal = gearChild[_self.index].getAttribute('val');
             var maxVal = l - 1;
             if (gearVal > maxVal) {
